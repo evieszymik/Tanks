@@ -1,0 +1,104 @@
+﻿<Window x:Class="Tankss.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tankss"
+        xmlns:vm="clr-namespace:Tankss.ViewModel"
+        mc:Ignorable="d"
+        Title="Tanks" Height="450" Width="800" Foreground="Black">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/0c431a4b511c14153bf20b5a223d8dd3.jpg"/>
+        </Grid.Background>
+        <Button Content="" Margin="276,86,318,277" Command="{Binding BrowseCommand}" FontSize="22" FontFamily="Arial Black" BorderBrush="White" RenderTransformOrigin="0.478,-0.374" UseLayoutRounding="False" Foreground="White" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/88ba51e94c3507770df3d96ae6129a1a.jpg" Stretch="Fill"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock Text="BROWSE" Foreground="Black" FontSize="22" FontFamily="Arial Black" Padding="2" Margin="314,101,-314,196" IsEnabled="False" IsHitTestVisible="False">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="0" BlurRadius="2" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <TextBlock Text="BROWSE" Foreground="White" FontSize="22" FontFamily="Arial Black" Margin="314,101,-314,-101" IsEnabled="False" IsHitTestVisible="False"/>
+        <TextBlock TextWrapping="Wrap" Margin="276,-16,121,348" FontSize="72" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <Run Language="pl-pl" Text="TANKS"/>
+        </TextBlock>
+        <Button Content="" Margin="276,176,311,184" Command="{Binding CompareCommand}" FontSize="22" FontFamily="Arial Black" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.478,-0.374">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/64794157d4d627821bd7d82ec6d15dcf.jpg"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button Content="" Command="{Binding InstructionCommand}" Margin="272,355,311,10" FontSize="22" FontFamily="Arial Black" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.478,-0.374">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/a0c63a4265363b64578513e55c5b7113.jpg"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="" Margin="276,263,311,91" FontSize="22" FontFamily="Arial Black" BorderBrush="White" Foreground="White" Command="{Binding Authors}" RenderTransformOrigin="0.478,-0.374">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/86f5ee8b7f5c36b0c4c3e9cbe32083e7.jpg"/>
+            </Button.Background>
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="25"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock Text="INSTRUCTION" Foreground="Black" FontSize="22" FontFamily="Arial Black" Padding="2" Margin="290,369,-290,-369" IsEnabled="False" IsHitTestVisible="False">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="0" BlurRadius="2" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="INSTRUCTION" Foreground="White" FontSize="22" FontFamily="Arial Black" Margin="290,369,-290,-369" IsEnabled="False" IsHitTestVisible="False"/>
+        <TextBlock Text="AUTHORS" Foreground="Black" FontSize="22" FontFamily="Arial Black" Padding="2" Margin="314,283,-314,-283" IsHitTestVisible="False" IsEnabled="False">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="0" BlurRadius="2" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="AUTHORS" Foreground="White" FontSize="22" FontFamily="Arial Black" Margin="314,283,-314,-283" IsEnabled="False" IsHitTestVisible="False"/>
+        <TextBlock Text="COMPARE" Foreground="Black" FontSize="22" FontFamily="Arial Black" Padding="2" Margin="314,193,-314,-193" IsEnabled="False" IsHitTestVisible="False">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" ShadowDepth="0" BlurRadius="2" Opacity="1"/>
+            </TextBlock.Effect>
+        </TextBlock>
+        <TextBlock Text="COMPARE" Foreground="White" FontSize="22" FontFamily="Arial Black" Margin="314,193,-314,-193" IsHitTestVisible="False" IsEnabled="False"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="0c431a4b511c14153bf20b5a223d8dd3.jpg" />
+    <None Remove="5.jpg" />
+    <None Remove="64794157d4d627821bd7d82ec6d15dcf.jpg" />
+    <None Remove="67a1a05cf80c8e132274aa21273f00eb.jpg" />
+    <None Remove="86f5ee8b7f5c36b0c4c3e9cbe32083e7.jpg" />
+    <None Remove="88ba51e94c3507770df3d96ae6129a1a.jpg" />
+    <None Remove="a0c63a4265363b64578513e55c5b7113.jpg" />
+    <None Remove="Zrzut ekranu 2024-06-24 214409.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.4.0" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="0c431a4b511c14153bf20b5a223d8dd3.jpg" />
+    <Resource Include="5.jpg" />
+    <Resource Include="64794157d4d627821bd7d82ec6d15dcf.jpg" />
+    <Resource Include="67a1a05cf80c8e132274aa21273f00eb.jpg" />
+    <Resource Include="86f5ee8b7f5c36b0c4c3e9cbe32083e7.jpg" />
+    <Resource Include="88ba51e94c3507770df3d96ae6129a1a.jpg" />
+    <Resource Include="a0c63a4265363b64578513e55c5b7113.jpg" />
+    <Resource Include="Zrzut ekranu 2024-06-24 214409.jpg" />
+  </ItemGroup>
+
+</Project>

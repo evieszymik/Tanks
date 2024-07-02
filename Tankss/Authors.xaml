@@ -1,0 +1,48 @@
+﻿<Window x:Class="Tankss.Authors"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            xmlns:local="clr-namespace:Tankss"
+    xmlns:vm="clr-namespace:Tankss.ViewModel"
+    mc:Ignorable="d"
+    Title="Tanks" Height="450" Width="800" Foreground="Black">
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF404040" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Jakub Stępień" FontSize="54" Foreground="White" HorizontalAlignment="Left" FontFamily="MV Boli" Margin="221,163,0,-300" FontStyle="Italic">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Ewa Szymik" FontSize="54" Foreground="White" HorizontalAlignment="Left" FontFamily="MV Boli" Margin="249,241,0,-378" FontStyle="Italic">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label Content="Wiktoria Pawlikowska" FontSize="54" Foreground="White" HorizontalAlignment="Center" FontFamily="MV Boli" Margin="0,86,0,-223" FontStyle="Italic">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        
+        <Label Content="Designed By" FontSize="54" Foreground="White" HorizontalAlignment="Center" FontFamily="Comic Sans MS" Margin="0,10,0,-147">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button Content="GO BACK" Command="{Binding ReturnCommand}" Margin="595,358,36,10" Background="#FFE40000" BorderBrush="White" FontFamily="Comic Sans MS">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+    </Grid>
+</Window>
